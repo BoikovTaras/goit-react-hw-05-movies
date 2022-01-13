@@ -1,0 +1,76 @@
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #b4ddffa9;
+  border: none;
+  color: #000000;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:before {
+  content: '\00ab';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-left: 25px;
+}
+
+.button:hover span:before {
+  opacity: 1;
+  left: 0;
+}
+.card {
+  display: flex;
+}
+.info {
+  padding-left: 20px;
+  width: 100%;
+}
+.title {
+  padding: 10px 0;
+  color: #448dc9;
+}
+.diteils {
+  padding: 5px 0;
+  color: #2e2e2e;
+}
+.list {
+  list-style: none;
+  padding: 0;
+}
+.item {
+  padding: 7px 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 2px -2px 5px 0 rgba(0, 0, 0, 0.1),
+    -2px -2px 5px 0 rgba(0, 0, 0, 0.1), 2px 2px 5px 0 rgba(0, 0, 0, 0.1),
+    -2px 2px 5px 0 rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+  letter-spacing: 2px;
+  transition: 0.3s all linear;
+}
+.link {
+  text-decoration: none;
+  color: #1f6cc4;
+}
+.additional {
+  padding: 10px 0;
+}
